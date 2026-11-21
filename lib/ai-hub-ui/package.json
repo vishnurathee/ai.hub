@@ -1,0 +1,46 @@
+{
+  "name": "@workspace/ai-hub-ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./components/*": "./src/components/*.tsx",
+    "./components/ui/*": "./src/components/ui/*.tsx",
+    "./hooks/use-toast": "./src/hooks/use-toast.ts",
+    "./lib/*": "./src/lib/*.ts",
+    "./pages/*": "./src/pages/*.tsx"
+  },
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@workspace/api-zod": "workspace:*",
+    "@clerk/themes": "^2.4.57",
+    "@radix-ui/react-dropdown-menu": "^2.1.7",
+    "lucide-react": "catalog:",
+    "@radix-ui/react-toast": "^1.2.7",
+    "class-variance-authority": "catalog:",
+    "@radix-ui/react-tooltip": "^1.2.0",
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@tanstack/react-query": "^5.90.21",
+    "@clerk/react": "^6.17.2",
+    "wouter": "^3.3.5"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@types/node": "catalog:",
+    "tsx": "catalog:",
+    "react": "catalog:",
+    "@clerk/react": "^6.17.2",
+    "wouter": "^3.3.5",
+    "@tanstack/react-query": "catalog:",
+    "react-dom": "catalog:"
+  }
+}
